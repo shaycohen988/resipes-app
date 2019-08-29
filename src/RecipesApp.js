@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import axios from "axios";
+import Navbar from "./Navbar";
 
 export default function RecipesApp() {
   const APP_KEY = "7544ed837eb08e30fcae4872309b7963";
@@ -17,7 +18,8 @@ export default function RecipesApp() {
 
   return (
     <div>
-      <h1> RecipדדApp</h1>
+      <Navbar />
+      
     </div>
   );
 }
