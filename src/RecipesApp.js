@@ -17,7 +17,7 @@ export default function RecipesApp() {
 
   return (
     <div>
-      <h1> RecipesשדדApp</h1>
+      <h1> RecipדדApp</h1>
     </div>
   );
 }
