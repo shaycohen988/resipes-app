@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import RecipesApp from "./RecipesApp";
 
 function App() {

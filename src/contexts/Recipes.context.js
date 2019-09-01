@@ -18,14 +18,28 @@ export default function RecipesProvider(props) {
     fetchData();
   });
  */
-
   const [recipes, setRecipes] = useState(seedRecipes);
 
+  function findRecipeById(recipeId) {
+    const x = recipes.find(function(recipe) {
+      if (recipe.id === recipeId) {
+        console.log(recipeId);
+        console.log(recipe);
+        return recipe;
+      }
+      return 0;
+    });
+    return x;
+  }
   return (
-    <div>
-      <RecipesContext.Provider value={{ recipes }}>
-        {props.children}
-      </RecipesContext.Provider>
-    </div>
+    <RecipesContext.Provider value={{ recipes, findRecipeById }}>
+      {props.children}
+    </RecipesContext.Provider>
   );
 }
+/* 
+findPalette(id) {
+  return seedColors.find(function(palette) {
+    return palette.id === id;
+  });
+} */

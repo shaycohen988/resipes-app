@@ -1,0 +1,36 @@
+.Navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.Navbar-logo {
+  display: flex;
+  width: 20%;
+}
+.navbar-links-continer {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  border: 2px solid black;
+  padding: 2% 5%;
+  text-align: center;
+  font-size: 1em;
+  width: 16%;
+}
+
+.border-red {
+  border-color: #ec6262;
+}
+.border-green {
+  border-color: #42cc3e;
+}
+.border-blue {
+  border-color: #4174ff;
+}

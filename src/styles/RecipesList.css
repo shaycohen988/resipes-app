@@ -1,0 +1,7 @@
+.recipesList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+  flex-wrap: wrap;
+  width: 100%;
+}

@@ -1,15 +1,18 @@
 import React, { useContext } from "react";
 import { RecipesContext } from "./contexts/Recipes.context";
+import Recipe from "./Recipe";
+import "./styles/RecipesList.css";
 
 export default function RecipesList() {
   const { recipes } = useContext(RecipesContext);
 
   console.log(recipes);
   return (
-    <div>
-      <h1>RecipesList</h1>
+    <div className="recipesList">
       {recipes.map(recipe => (
-        <h1>{recipe.label}</h1>
+        <>
+          <Recipe key={recipe.id} {...recipe} />
+        </>
       ))}
     </div>
   );
